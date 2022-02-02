@@ -1,0 +1,103 @@
+/*Styles*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --lexica: "Lexend Deca", sans-serif;
+  --bsd: "Big Shoulders Display", cursive;
+  --orange: hsl(31, 77%, 52%);
+  --light: hsl(184, 100%, 22%);
+  --dark: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --gray: hsl(0, 0%, 95%);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  width: 280px;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.cars {
+  padding: 40px 20px 40px 40px;
+  z-index: 1;
+  img {
+    height: 30px;
+  }
+}
+
+.cars h1 {
+  font-family: var(--bsd);
+  color: var(--gray);
+  font-weight: 700;
+}
+
+.cars p {
+  font-family: var(--lexica);
+  line-height: 20px;
+
+  color: var(--white);
+  font-size: 12px;
+}
+
+#sedan {
+  background-color: var(--orange);
+  .button:hover a {
+    color: var(--orange);
+  }
+}
+
+#suv {
+  background-color: var(--light);
+  .button:hover a {
+    color: var(--light);
+  }
+}
+
+#luxury {
+  background-color: var(--dark);
+  .button:hover a {
+    color: var(--dark);
+  }
+}
+
+.button {
+  border: 1px solid white;
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  display: flex;
+
+  &:hover {
+    background-color: var(--gray);
+  }
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--lexica);
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-container {
+    min-width: 960px;
+    display: flex;
+    flex-direction: row;
+  }
+}
