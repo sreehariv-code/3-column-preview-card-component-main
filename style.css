@@ -14,7 +14,7 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .flex-container {
@@ -92,7 +92,7 @@
   font-size: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 994px) {
   main {
     min-height: 100vh;
     width: 100%;
@@ -100,11 +100,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .flex-container {
     min-width: 960px;
@@ -113,8 +113,23 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 400px;
+  }
+  .flex-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  .cars p {
+    font-size: 0.85em;
+    width: 70%;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .cars img {
+    height: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */

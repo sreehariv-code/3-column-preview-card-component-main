@@ -99,5 +99,22 @@
     min-width: 960px;
     display: flex;
     flex-direction: row;
+    height: 400px;
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+  }
+
+  .cars p {
+    font-size: 0.85em;
+    width: 70%;
+    line-height: 20px;
+    margin-top: 0;
+  }
+
+  .cars img {
+    height: 35px;
   }
 }
